@@ -37,68 +37,7 @@
     
 
     ?>
-    <style type="text/css">
-      html, 
-      body{
-        padding-bottom: 0px;
-        height: 100%;
-        padding-top: 30px;  
-       }
 
-    /* Wrapper for page content to push down footer */
-    #wrap {
-      min-height: 100%;
-
-      height: auto;
-      /* Negative indent footer by its height */
-      margin: 0 auto -60px;
-      /* Pad bottom by footer height */
-      padding: 0 0 60px;
-    }
-      #footer{
-      position: relative;
-      bottom: 0; /**/ 
-      width: 100%;
-      height: 60px;
-      background-color: #f5f5f5;
-
-      }
-      .form-signin {
-  max-width: 330px;
-  padding: 15px;
-  margin: 0 auto;
-}
-.form-signin .form-signin-heading,
-.form-signin .checkbox {
-  margin-bottom: 10px;
-}
-.form-signin .checkbox {
-  font-weight: normal;
-}
-.form-signin .form-control {
-  position: relative;
-  font-size: 16px;
-  height: auto;
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.form-signin .form-control:focus {
-  z-index: 2;
-}
-.form-signin input[type="text"] {
-  margin-bottom: -1px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-    </style>
   </head>
 
   <body>
@@ -117,9 +56,8 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse">
-            <div class="container">  
-          <ul class="nav navbar-nav navbar-right">
+        <div class="navbar-collapse collapse">
+           <ul class="nav navbar-nav navbar-right">
             <?php
               
                  // print_r($menu);  
@@ -134,7 +72,7 @@
                                        echo "<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">{$key}<b class=\"caret\"></b></a>
                                     <ul class=\"dropdown-menu\">";
                                      foreach ($values as  $v) {
-                                         echo "<li><a href=\"{$v['link']}\">{$v['nome']}</a></li>";
+                                         echo "<li><a href=\"{$v['link']}\">{$v['nome']}</a></li>\n";
                                      }
                                  }
                              }     
@@ -142,7 +80,7 @@
                                
                           }//fim da verificação do dropdown
                           else
-                            echo "<li><a href=\"{$value['link']}\">{$value['nome']}</a></li>";
+                            echo "<li><a href=\"{$value['link']}\">{$value['nome']}</a></li>\n";
                              
                         }
                     }
@@ -160,12 +98,13 @@
       
             
           </ul>
-        </div><!-- /.container -->
+
       </div><!-- /.navbar-collapse -->
     
    </div>
-  </div>     
-   <div id="wrap">
+  </div>    
+
+  <div id="wrap">
       <?php
         if(isset($_SESSION['msg'])){
             echo 

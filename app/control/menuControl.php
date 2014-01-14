@@ -25,36 +25,90 @@ class menu extends controller {
      $menu = array();
         if(isset($_SESSION['session']['logado'])){
             $menu = array(
-                array( 
+                 array( 
+                          "dropdown"=> array(
+                              "Material" => array(
+                            array(
                             "link" => BARRA.url_base."#",
-                            "nome" =>'Materiais'
+                            "nome" =>'Inserir material'
+                            ),
+                           array(
+                            "link" => BARRA.url_base."#",
+                            "nome" =>'Visualizar Materiais'
+                            )
+                              
+                      )
+                          )
+                       ),
+                array( 
+                     "dropdown"=> array(
+                      "Odontologia" => array(
+                                  array(
+                            "link" => BARRA.url_base."#",
+                            "nome" =>'Procedimento'
+                            ),
+                                  array(
+                            "link" => BARRA.url_base."#",
+                            "nome" =>'Próteses'
+                            ),
+                                  array(
+                            "link" => BARRA.url_base."#",
+                            "nome" =>'Imagem'
+                            )
+                                  )
+                      )
                         ),
                 array( 
+                          "dropdown"=> array(
+                              "Produção Intelectual" => array(
+                                  array(
                             "link" => BARRA.url_base."#",
-                            "nome" =>'Odontologia'
-                        ),
-                array( 
-                            "link" => BARRA.url_base."#",
-                            "nome" =>'Produção Intelectual'
-                        ),
+                            "nome" =>''
+                            )
+                                  )
+                      )
+                       ),
                 array(
                            "dropdown"=> array(
                                             "Paciente" => array(
                                                     array(                                                        
+                                                        "link" => BARRA.url_base."/menu/cadastropaciente",
+                                                        "nome" =>'Cadastro'
+                                                    ),
+                                                    array(                                                        
+                                                        "link" => BARRA.url_base."/menu/cadespecmed",
+                                                        "nome" =>'Especifico Medicina'
+                                                    ),
+                                                    array(                                                        
+                                                        "link" => BARRA.url_base."/menu/cadespecpsi",
+                                                        "nome" =>'Especifico Psicologia'
+                                                    ),
+
+                                                    array(                                                        
                                                         "link" => BARRA.url_base."/menu/#",
-                                                        "nome" =>'Cadastrar'
+                                                        "nome" =>'Exames'
                                                     ),
                                                     array(                                                        
                                                         "link" => BARRA.url_base."/menu/#",
-                                                        "nome" =>'Consultar'
-                                                    )
+                                                        "nome" =>'Procedimentos'
+                                                ),
+                                                    array(                                                        
+                                                        "link" => BARRA.url_base."/menu/#",
+                                                        "nome" =>'Visuaizar Paciente'
                                                 )
                              )  
+                          )
                         ),
-                     array(
-                           "link" => BARRA.url_base."#",
-                           "nome" =>'Relatórios'
-                        ), 
+                      array( 
+                          "dropdown"=> array(
+                              "Relatório" => array(
+                                  array(
+                            "link" => BARRA.url_base."#",
+                            "nome" =>'Enviar Relatório'
+                            )
+                                  )
+                      )
+                       ),
                   array(
                       "link" => BARRA.url_base."/login/logoff",
                       "nome" =>'Sair'
@@ -71,8 +125,8 @@ class menu extends controller {
                      array(
                            "link" => BARRA.url_base."/menu/login",
                            "nome" =>'Login'
-                        ),
-                  
+                        )
+              
         );  
       }  
      
@@ -151,16 +205,16 @@ class menu extends controller {
     
     
     
-    public function test(){
+    public function cadespecpsi(){
         
         //titulo da pagina
-        $this->atr_page['titulo'] = 'teste';    
+        $this->atr_page['titulo'] = 'Cadastro Esp. Psicologia';    
         //classe do controle 
         $this->atr_page['control'] = 'menu/';
         
         $this->res[] = $this->atr_page;
         
-       $this->view('teste', $this->res);  
+       $this->view('cadastroEspecificoPsicologia', $this->res);  
     }
 }
 

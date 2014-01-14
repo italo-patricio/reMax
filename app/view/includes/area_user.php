@@ -1,5 +1,5 @@
 <?php if(!defined('BASEPATH')) exit('Falha no carregamento do script!');
-    seguranca_arq();
+    //seguranca_arq();
 ?>
 
 <div class="section">

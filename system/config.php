@@ -1,7 +1,7 @@
 <?php
 
 //url base
-define('url_base', 'iwork');
+define('url_base', 'reMax');
 //pagina base
 define('PAGEBASE', 'base');
 
