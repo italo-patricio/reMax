@@ -14,7 +14,7 @@ reMax
 
 ###Passos de instalação:
 
-1- Instale o servidor;
+1- Instale o servidor, execute e ative o rewrite_module;
 
 2- Instale o mysql; 
 
