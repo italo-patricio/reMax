@@ -5,14 +5,12 @@
     
     
 <form>
-
-
 <!-- Form Name -->
 <legend>Medicina</legend>
 
 
 <!-- Text input-->
-<div class="form-group col-lg-8">
+<div class="form-group col-lg-3">
   
     <label for="textinput">Qual patologia acometeu o paciente?</label>
     <input id="textinput" name="textinput" type="text" placeholder="Digite a patologia" class="form-control">
@@ -20,7 +18,7 @@
 </div>
 
 <!-- Select Basic -->
-<div class="form-group col-lg-4">
+<div class="form-group col-lg-2">
  
     <label for="selectbasic">CID do Câncer</label>
     <select id="selectbasic" name="selectbasic" class="form-control">
@@ -60,7 +58,7 @@
 </div>
 
 <!-- Text input-->
-<div class="form-group col-lg-4">
+<div class="form-group col-lg-2">
   
     <label for="textinput">Data</label>
     <input id="textinput" name="textinput" type="date" placeholder="dia/mês/ano Selecione a data do procedimento" class="form-control">
@@ -85,7 +83,7 @@
     
 </div>
 
-<div class="form-group col-lg-6">
+<div class="form-group col-lg-2">
   
     <label class="control-label" for="selectbasic">Foi realizado algum tratamento complementar?</label>
     <select id="selectbasic" name="selectbasic" class="form-control">
@@ -97,7 +95,7 @@
 </div>
 
 <!-- Select Basic -->
-<div class="form-group col-lg-6">
+<div class="form-group col-lg-2">
   
     <label class="control-label" for="selectbasic">Se sim, qual?</label>
     <select id="selectbasic" name="selectbasic" class="form-control">
@@ -110,7 +108,7 @@
 </div>
 
 <!-- Text input-->
-<div class="form-group col-lg-4">
+<div class="form-group col-lg-2">
   
     <label class="control-label" for="textinput">Data de início</label>
     <input id="textinput" name="textinput" type="date" placeholder="Selecionar a data do tratamento" class="form-control">
@@ -118,7 +116,7 @@
 </div>
 
 <!-- Text input-->
-<div class="form-group col-lg-4">
+<div class="form-group col-lg-2">
   
     <label class="control-label" for="textinput">Data de término</label>
     <input id="textinput" name="textinput" type="date" placeholder="" class="form-control">
@@ -126,7 +124,7 @@
 </div>
 
 <!-- Text input-->
-<div class="form-group col-lg-4">
+<div class="form-group col-lg-2">
   
     <label class="control-label" for="textinput">Dose total do tratamento complementar</label>
     <input id="textinput" name="textinput" type="text" placeholder="" class="form-control">
@@ -141,7 +139,7 @@
     
 </div>
 <!-- Select Basic -->
-<div class="form-group col-lg-6">
+<div class="form-group col-lg-3">
   
     <label class="control-label" for="selectbasic">Imagem Disponível</label>
     <select id="selectbasic" name="selectbasic" class="form-control">
@@ -156,7 +154,7 @@
 </div>
 
 <!-- Text input-->
-<div class="form-group col-lg-6">
+<div class="form-group col-lg-2">
   
     <label class="control-label" for="textinput">Data </label>
     <input id="textinput" name="textinput" type="date" placeholder="" class="form-control">

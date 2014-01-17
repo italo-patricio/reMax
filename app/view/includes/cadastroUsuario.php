@@ -19,14 +19,14 @@
 <legend>Cadastro do usuário</legend>
 
 <!-- Text input-->
-<div class="form-group col-lg-12">
+<div class="form-group col-lg-4">
    <label for="Nome">Nome completo</label>
    <input id="Nome" name="Nome" placeholder="Maria Gabriela de Souza" class="form-control" type="text">
  
 </div>
 
 <!-- Text input-->
-<div class="form-group col-lg-4">
+<div class="form-group col-lg-2">
   
     <label  for="textinput">Login</label>
   <input id="textinput" name="textinput" placeholder="Informe o Login" class="form-control" type="text">
@@ -35,7 +35,7 @@
 
 
 <!-- Password input-->
-<div class="form-group col-lg-4">
+<div class="form-group col-lg-2">
  
     <label for="passwordinput">Senha</label>
   <input id="passwordinput" name="passwordinput" placeholder="Digite sua senha" class="form-control" type="password">
@@ -43,7 +43,7 @@
 </div>
 
 <!-- Password input-->
-<div class="form-group col-lg-4">
+<div class="form-group col-lg-2">
   
   <label for="passwordinput">Confirmar senha</label>
   <input id="passwordinput" name="passwordinput" placeholder="Digite sua senha novamente" class="form-control" type="password">
@@ -51,7 +51,7 @@
 </div>
 
 <!-- Select Basic -->
-<div class="form-group col-lg-4">
+<div class="form-group col-lg-3">
   
 <label  for="selectbasic">Sexo</label>
     <select id="selectbasic" name="selectbasic" class="form-control">
@@ -63,7 +63,7 @@
 </div>
 
 <!-- Text input-->
-<div class="form-group col-lg-4">
+<div class="form-group col-lg-2">
  
   <label  for="textinput">Data de Nascimento</label>
   <input id="textinput" name="textinput" placeholder="" class="form-control" type="date">
@@ -71,7 +71,7 @@
 </div>
 
 <!-- Select Basic -->
-<div class="form-group col-lg-4">
+<div class="form-group col-lg-2">
   <label for="selectbasic">Estado Civil</label>
     <select id="selectbasic" name="selectbasic" class="form-control">
       <option>Selecionar</option>
@@ -83,7 +83,7 @@
 </div>
 
 <!-- Text input-->
-<div class="form-group col-lg-4">
+<div class="form-group col-lg-2">
   
     <label for="textinput">CPF</label>
     <input id="textinput" name="textinput" placeholder="Informe seu cpf" class="form-control" type="text">
@@ -91,7 +91,7 @@
 </div>
 
 <!-- Text input-->
-<div class="form-group col-lg-4">
+<div class="form-group col-lg-2">
   
     <label  for="textinput">Identidade</label>
     <input id="textinput" name="textinput" placeholder="Informe sua identidade" class="form-control" type="text">
@@ -99,7 +99,7 @@
 </div>
 
 <!-- Select Basic -->
-<div class="form-group col-lg-4">
+<div class="form-group col-lg-3">
  
     <label class="control-label" for="selectbasic">Estado</label>
     <select id="selectbasic" name="selectbasic" class="form-control">
@@ -109,7 +109,7 @@
   </div>
 
 <!-- Select Basic -->
-<div class="form-group col-lg-3">
+<div class="form-group col-lg-2">
   
     <label for="selectbasic">Cidade</label>
     <select id="selectbasic" name="selectbasic" class="form-control">
@@ -119,7 +119,7 @@
 </div>
 
 <!-- Text input-->
-<div class="form-group col-lg-3">
+<div class="form-group col-lg-2">
   
     <label  for="textinput">CEP</label>
     <input id="textinput" name="textinput" placeholder="Selecione seu CEP" class="form-control" type="text">
@@ -127,7 +127,7 @@
 </div>
 
 <!-- Text input-->
-<div class="form-group col-lg-6">
+<div class="form-group col-lg-5">
   
     <label  for="textinput">Endereço</label>
     <input id="textinput" name="textinput" placeholder="Selecione seu endereço" class="form-control" type="text">
@@ -135,7 +135,7 @@
 </div>
 
 <!-- Text input-->
-<div class="form-group col-lg-8">
+<div class="form-group col-lg-3">
   
     <label for="textinput">Complemento</label>
     <input id="textinput" name="textinput" placeholder="" class="form-control" type="text">
@@ -143,7 +143,7 @@
 </div>
 
 <!-- Text input-->
-<div class="form-group col-lg-4">
+<div class="form-group col-lg-2">
    
     <label  for="textinput">Número</label>
     <input id="textinput" name="textinput" placeholder="" class="form-control" type="text">
@@ -152,7 +152,7 @@
 
 
 <!-- Text input-->
-<div class="form-group col-lg-7">
+<div class="form-group col-lg-4">
   
     <label class="control-label" for="textinput">E-mail</label>
     <input id="textinput" name="textinput" placeholder="exemplo@email.com" class="form-control" type="text">
@@ -160,7 +160,7 @@
 </div>
 
 <!-- Select Basic -->
-<div class="form-group col-lg-5">
+<div class="form-group col-lg-3">
  
     <label class="control-label" for="selectbasic">Instituição</label>
     <select id="selectbasic" name="selectbasic" class="form-control">
@@ -173,7 +173,7 @@
 </div>
 
 <!-- Select Basic -->
-<div class="form-group col-lg-6">
+<div class="form-group col-lg-2">
   
     <label class="control-label" for="selectbasic">Vínculo com o projeto</label>
     <select id="selectbasic" name="selectbasic" class="form-control">
@@ -188,7 +188,7 @@
 </div>
 
 <!-- Select Basic -->
-<div class="form-group col-lg-6">
+<div class="form-group col-lg-3">
  
     <label class="control-label" for="selectbasic">Área</label>
     <select id="selectbasic" name="selectbasic" class="form-control">
@@ -205,7 +205,7 @@
 </div>
 
 <!-- Button -->
-<div class="form-group col-lg-15 ">
+<div class="form-group col-lg-12 ">
  
     <label  for="singlebutton"></label>
     <button id="singlebutton" name="singlebutton" class="btn btn-primary col-lg-4 ">Confirmar</button>
