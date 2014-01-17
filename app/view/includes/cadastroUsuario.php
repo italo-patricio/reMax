@@ -14,14 +14,14 @@
     <div class="container">  
     <div class="row">
 
-        <form>
+        <form class="form-group" role="form" method="post" action="<?=BARRA.url_base.BARRA ?>reMax/">
       
 <legend>Cadastro do usuário</legend>
 
 <!-- Text input-->
 <div class="form-group col-lg-4">
    <label for="Nome">Nome completo</label>
-   <input id="Nome" name="Nome" placeholder="Maria Gabriela de Souza" class="form-control" type="text">
+   <input id="Nome" name="Nome" placeholder="" class="form-control" type="text">
  
 </div>
 
@@ -51,7 +51,7 @@
 </div>
 
 <!-- Select Basic -->
-<div class="form-group col-lg-3">
+<div class="form-group col-lg-2">
   
 <label  for="selectbasic">Sexo</label>
     <select id="selectbasic" name="selectbasic" class="form-control">
@@ -99,7 +99,7 @@
 </div>
 
 <!-- Select Basic -->
-<div class="form-group col-lg-3">
+<div class="form-group col-lg-2">
  
     <label class="control-label" for="selectbasic">Estado</label>
     <select id="selectbasic" name="selectbasic" class="form-control">
@@ -208,7 +208,7 @@
 <div class="form-group col-lg-12 ">
  
     <label  for="singlebutton"></label>
-    <button id="singlebutton" name="singlebutton" class="btn btn-primary col-lg-4 ">Confirmar</button>
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Confirmar</button>
   
 </div>
 

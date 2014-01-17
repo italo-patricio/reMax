@@ -14,7 +14,7 @@
 <div class="form-group col-lg-3">
   
     <label for="textinput">Cód. Paciente</label>
-    <input id="textinput" name="textinput" type="text" placeholder="Digite a patologia" class="form-control">
+    <input id="textinput" name="textinput" type="text" placeholder="" class="form-control">
     
 </div>
 

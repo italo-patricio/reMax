@@ -250,10 +250,10 @@ class="form-control">
 <input id="textinput" name="textinput" type="text" placeholder=""class="form-control">
 </div>
     
-<div class="form-group col-lg-15 ">
+<div class="form-group col-lg-12">
  
     <label  for="singlebutton"></label>
-    <button id="singlebutton" name="singlebutton" class="btn btn-primary col-lg-4 ">Confirmar</button>
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary  ">Confirmar</button>
   
 </div>
 </form>
