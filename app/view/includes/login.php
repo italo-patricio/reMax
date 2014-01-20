@@ -13,7 +13,7 @@
       
         <button class="btn btn-lg btn-primary btn-block" type="submit">Logar</button>
         <label>
-            <a href="">
+            <a href="recsenha">
                 Recuperar senha
             </a>
         </label>

@@ -40,24 +40,7 @@ class menu extends controller {
                       )
                           )
                        ),
-                array( 
-                     "dropdown"=> array(
-                      "Odontologia" => array(
-                                  array(
-                            "link" => BARRA.url_base."#",
-                            "nome" =>'Procedimento'
-                            ),
-                                  array(
-                            "link" => BARRA.url_base."#",
-                            "nome" =>'Próteses'
-                            ),
-                                  array(
-                            "link" => BARRA.url_base."#",
-                            "nome" =>'Imagem'
-                            )
-                                  )
-                      )
-                        ),
+                
                 array( 
                           "dropdown"=> array(
                               "Produção Intelectual" => array(
@@ -69,12 +52,15 @@ class menu extends controller {
                       )
                        ),
                 array(
-                           "dropdown"=> array(
-                                            "Paciente" => array(
-                                                    array(                                                        
+                            "dropdown" => array(
+                                       "Paciente" => array(
+                                          
+                                           array(                                                        
                                                         "link" => BARRA.url_base."/menu/cadastropaciente",
-                                                        "nome" =>'Cadastro'
-                                                    ),
+                                              
+                                                        "nome" =>'Cadastro Geral'       
+                                                    
+                                           ),
                                                     array(                                                        
                                                         "link" => BARRA.url_base."/menu/cadespecmed",
                                                         "nome" =>'Especifico Medicina'
@@ -82,11 +68,18 @@ class menu extends controller {
                                                     array(                                                        
                                                         "link" => BARRA.url_base."/menu/cadespecpsi",
                                                         "nome" =>'Especifico Psicologia'
+                                                
                                                     ),
+                                                        
 
                                                     array(                                                        
-                                                        "link" => BARRA.url_base."/menu/#",
+                                                        "link" => BARRA.url_base."/menu/exame1",
                                                         "nome" =>'Exames'
+                                                    ),
+                                                    
+                                                       array(                                                        
+                                                        "link" => BARRA.url_base."/menu/anamnese",
+                                                        "nome" =>'Odontologia'
                                                     ),
                                                     array(                                                        
                                                         "link" => BARRA.url_base."/menu/#",
@@ -103,7 +96,7 @@ class menu extends controller {
                           "dropdown"=> array(
                               "Relatório" => array(
                                   array(
-                            "link" => BARRA.url_base."#",
+                            "link" => BARRA.url_base."/menu/relatorio",
                             "nome" =>'Enviar Relatório'
                             )
                                   )
@@ -180,6 +173,7 @@ class menu extends controller {
         
        $this->view('cadastroPaciente', $this->res);  
     }
+    
     public function areausuario(){
         //titulo da pagina
         $this->atr_page['titulo'] = 'Área do Usuário';    
@@ -217,6 +211,93 @@ class menu extends controller {
         
        $this->view('cadastroEspecificoPsicologia', $this->res);  
     }
-}
+    
+    public function recsenha(){
+        
+        //titulo da pagina
+        $this->atr_page['titulo'] = 'Recuperar Senha';    
+        //classe do controle 
+        $this->atr_page['control'] = 'menu/';
+        
+        $this->res[] = $this->atr_page;
+        
+       $this->view('recuperarSenha', $this->res);  
+    }
+    
+  //Parte de exame
+    public function exame1(){
+        
+        //titulo da pagina
+        $this->atr_page['titulo'] = 'Exame';    
+        //classe do controle 
+        $this->atr_page['control'] = 'menu/';
+        
+        $this->res[] = $this->atr_page;
+        
+       $this->view('Exame1', $this->res);  
+    }
+   
+    public function exame2(){
+        
+        //titulo da pagina
+        $this->atr_page['titulo'] = 'loginExame';    
+        //classe do controle 
+        $this->atr_page['control'] = 'menu/';
+        
+        $this->res[] = $this->atr_page;
+        
+       $this->view('exame2', $this->res);  
+    }
+    //fim da parte de exames
+    
+    //Inicio das páginas de odontologia
+     public function anamnese(){
+        
+        //titulo da pagina
+        $this->atr_page['titulo'] = 'anamnese';    
+        //classe do controle 
+        $this->atr_page['control'] = 'menu/';
+        
+        $this->res[] = $this->atr_page;
+        
+       $this->view('anamnese', $this->res);  
+    }
+    
+     public function procedimento(){
+        
+        //titulo da pagina
+        $this->atr_page['titulo'] = 'procedimento';    
+        //classe do controle 
+        $this->atr_page['control'] = 'menu/';
+        
+        $this->res[] = $this->atr_page;
+        
+       $this->view('procedimento', $this->res);  
+    } 
+    
+    //fim das páginas de odontologia
+  
+    
+    //Inicio de relatório
+    
+     public function relatorio(){
+        
+        //titulo da pagina
+        $this->atr_page['titulo'] = 'relatorio';    
+        //classe do controle 
+        $this->atr_page['control'] = 'menu/';
+        
+        $this->res[] = $this->atr_page;
+        
+       $this->view('relatorio', $this->res);  
+    }
+    // Fim de relatórios
+
+ 
+    
+     }
+
+
+
 
 

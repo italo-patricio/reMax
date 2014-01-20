@@ -7,7 +7,7 @@
 <!-- Form Name -->
 <legend>Psicologia</legend>
 <!-- Text input-->
-<div class="control-group col-lg-4">
+<div class="control-group col-lg-2">
  
  <label for="textinput">Data de internação do paciente</label>
  <input id="textinput" name="textinput" type="date" placeholder="" 
@@ -15,14 +15,14 @@ class="form-control">
  
 </div>
 <!-- Text input-->
-<div class="form-group col-lg-4">
+<div class="form-group col-lg-3">
  
  <label for="textinput">Setor em que o paciente está internado</label>
  <input id="textinput" name="textinput" type="text" placeholder="" 
 class="form-control">
  
 </div>
-<div class="control-group col-lg-4"> 
+<div class="control-group col-lg-2"> 
  <label for="textinput">Quantidade de Internações</label>
  <input id="textinput" name="textinput" type="number" placeholder="" 
 class="form-control">

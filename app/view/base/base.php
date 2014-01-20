@@ -120,7 +120,8 @@
       </div><!-- /.navbar-collapse -->
     
    </div>
-  </div>    
+  </div>   
+      
 
   <div id="wrap">
       <?php
@@ -144,13 +145,29 @@
                 else echo 'Falha no carregamento!';
            
            ?>
+              
+      <div class="section">
+        <div class="container">
+           <div class="form-group col-lg-12">
+             <h6>Instituições de apoio:</h6>
+      
+      <img src="<?=BARRA.url_base.BARRA.BASEIMAGES?>UFRN1.jpg" alt="" class="img-rounded" width="150px" height="200px">
+      <img src="<?=BARRA.url_base.BARRA.BASEIMAGES?>uern.jpg" alt="" class="img-rounded" width="150px" height="100px">
+      <img src="<?=BARRA.url_base.BARRA.BASEIMAGES?>proex.jpg" alt="" class="img-rounded" width="150px" height="100px">
+      <img src="<?=BARRA.url_base.BARRA.BASEIMAGES?>liga.jpg" alt="" class="img-rounded" width="150px" height="100px">
+            </div>
+        </div>
+      </div>
+              
+              
+              
           </div>
           <!-- Fim do conteúdo da página -->
-</div>
-
+  </div>
+   
      <div id="footer">
        <div class="container">  
-          <p class="text-muted">Copyright &copy; Company 2013</p>
+          <p class="text-muted">Desenvolvido por José Weverton olvieira Silva</p>
        </div>   
       </div>   
    
