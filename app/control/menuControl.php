@@ -61,10 +61,10 @@ class menu extends controller {
                 array( 
                           "dropdown"=> array(
                               "Produção Intelectual" => array(
-                                  array(
-                            "link" => BARRA.url_base."#",
-                            "nome" =>''
-                            )
+                                                           array(
+                                                                "link" => BARRA.url_base."#",
+                                                                "nome" =>''
+                                                          )
                                   )
                       )
                        ),
@@ -129,7 +129,8 @@ class menu extends controller {
               
         );  
       }  
-     
+     //$menu[1]['nome']
+      
       $this->res[] = array("menus" => $menu); 
     }
 

@@ -94,10 +94,28 @@
             <li><a href="<?=BARRA.url_base?>/menu/novoUsuario">Cadastra-se</a></li>
             <li><a href="<?=BARRA.url_base?>/menu/login">Login</a></li>
           -->
-          
-      
-            
-          </ul>
+ 
+   <li class="dropdown">
+   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Relatório<b class="caret"></b></a>
+ <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                  <li><a tabindex="-1" href="#">Action</a></li>
+                  <li><a tabindex="-1" href="#">Another action</a></li>
+                  <li><a tabindex="-1" href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-submenu pull-left">
+                    <a tabindex="-1" href="#">More options</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">Second level link</a></li>
+                      <li><a tabindex="-1" href="#">Second level link</a></li>
+                      <li><a tabindex="-1" href="#">Second level link</a></li>
+                      <li><a tabindex="-1" href="#">Second level link</a></li>
+                      <li><a tabindex="-1" href="#">Second level link</a></li>
+                    </ul>
+                  </li>
+                </ul>
+    </li>     
+     
+  </ul> <!--ul geral-->
 
       </div><!-- /.navbar-collapse -->
     
