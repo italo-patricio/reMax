@@ -78,7 +78,7 @@ class menu extends controller {
                                                     ),
                                                     
                                                        array(                                                        
-                                                        "link" => BARRA.url_base."/menu/#",
+                                                        "link" => BARRA.url_base."/menu/anamnese",
                                                         "nome" =>'Odontologia'
                                                     ),
                                                     array(                                                        
@@ -222,7 +222,8 @@ class menu extends controller {
         
        $this->view('recuperarSenha', $this->res);  
     }
-   
+    
+  //Parte de exame
     public function exame1(){
         
         //titulo da pagina
@@ -246,6 +247,22 @@ class menu extends controller {
         
        $this->view('exame2', $this->res);  
     }
+    //fim da parte de exames
+    
+    
+     public function anamnese(){
+        
+        //titulo da pagina
+        $this->atr_page['titulo'] = 'anamnese';    
+        //classe do controle 
+        $this->atr_page['control'] = 'menu/';
+        
+        $this->res[] = $this->atr_page;
+        
+       $this->view('anamnese', $this->res);  
+    }
 }
+
+
 
 
