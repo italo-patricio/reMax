@@ -3,9 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/reMax/docs/reMaxBD.sql</file>
-            <file>file:/C:/wamp/www/reMax/system/configDB.php</file>
-            <file>file:/C:/wamp/www/reMax/app/view/base/base.php</file>
+            <file>file:/C:/wamp/www/reMax/app/view/includes/procedimento.php</file>
+            <file>file:/C:/wamp/www/reMax/app/view/includes/area_user.php</file>
+            <file>file:/C:/wamp/www/reMax/app/view/includes/relatorio.php</file>
+            <file>file:/C:/wamp/www/reMax/app/view/includes/exame2.php</file>
+            <file>file:/C:/wamp/www/reMax/app/view/includes/cadastroEspecificoMedicina.php</file>
+            <file>file:/C:/wamp/www/reMax/app/control/menuControl.php</file>
+            <file>file:/C:/wamp/www/reMax/app/view/includes/cadastroEspecificoPsicologia.php</file>
         </group>
     </open-files>
 </project-private>

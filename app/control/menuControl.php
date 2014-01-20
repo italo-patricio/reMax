@@ -96,7 +96,7 @@ class menu extends controller {
                           "dropdown"=> array(
                               "Relatório" => array(
                                   array(
-                            "link" => BARRA.url_base."#",
+                            "link" => BARRA.url_base."/menu/relatorio",
                             "nome" =>'Enviar Relatório'
                             )
                                   )
@@ -249,7 +249,7 @@ class menu extends controller {
     }
     //fim da parte de exames
     
-    
+    //Inicio das páginas de odontologia
      public function anamnese(){
         
         //titulo da pagina
@@ -261,7 +261,41 @@ class menu extends controller {
         
        $this->view('anamnese', $this->res);  
     }
-}
+    
+     public function procedimento(){
+        
+        //titulo da pagina
+        $this->atr_page['titulo'] = 'procedimento';    
+        //classe do controle 
+        $this->atr_page['control'] = 'menu/';
+        
+        $this->res[] = $this->atr_page;
+        
+       $this->view('procedimento', $this->res);  
+    } 
+    
+    //fim das páginas de odontologia
+  
+    
+    //Inicio de relatório
+    
+     public function relatorio(){
+        
+        //titulo da pagina
+        $this->atr_page['titulo'] = 'relatorio';    
+        //classe do controle 
+        $this->atr_page['control'] = 'menu/';
+        
+        $this->res[] = $this->atr_page;
+        
+       $this->view('relatorio', $this->res);  
+    }
+    // Fim de relatórios
+
+ 
+    
+     }
+
 
 
 
