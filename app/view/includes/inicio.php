@@ -82,9 +82,19 @@
                     projeto está previsto para o dia 25 desse mês.
                 </p>
             </div>
-            
-        </div> <!--Fim da row-->
-  
+       <div class="section">
+        <div class="container">
+           <div class="form-group col-lg-12">
+             <h6>Instituições de apoio:</h6>
+      
+      <img src="<?=BARRA.url_base.BARRA.BASEIMAGES?>UFRN1.jpg" alt="" class="img-thumbnail" width="150px" height="200px">
+      <img src="<?=BARRA.url_base.BARRA.BASEIMAGES?>uern.jpg" alt="" class="img-thumbnail   " width="52px" height="200px">
+      <img src="<?=BARRA.url_base.BARRA.BASEIMAGES?>proex.jpg" alt="" class="img-thumbnail" width="220px" height="100px">
+      <img src="<?=BARRA.url_base.BARRA.BASEIMAGES?>liga.jpg" alt="" class="img-thumbnail" width="132px" height="100px">
+            </div>
+        </div>
+      </div>
+        </div>
     </div> <!-- Fim do container-->
    
 

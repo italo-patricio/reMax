@@ -22,106 +22,110 @@ class menu extends controller {
     }
 
     private function loadMenu(){
-     $menu = array();
-        if(isset($_SESSION['session']['logado'])){
-            $menu = array(
-                 array( 
-                          "dropdown"=> array(
-                              "Material" => array(
-                            array(
-                            "link" => BARRA.url_base."#",
-                            "nome" =>'Inserir material'
-                            ),
-                           array(
-                            "link" => BARRA.url_base."#",
-                            "nome" =>'Visualizar Materiais'
-                            )
-                              
-                      )
-                          )
-                       ),
+        
+         if(isset($_SESSION['session']['logado'])){
+            
+            $menu = "<li class=\"dropdown \" id=\"accountmenu\">
+                    <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Material<b class=\"caret\"></b></a>
+                    <ul class=\"dropdown-menu\">
+                        <li class=\"dropdown\">
+                          <a tabindex=\"-1\" href=\"#\">Inserir Material</a>
+                        </li>
+                        <li class=\"dropdown\">
+                          <a tabindex=\"-1\" href=\"#\">Visualizar Materiais</a>
+                        </li>
+                    </ul>
+            
+                <li class=\"dropdown\" id=\"accountmenu\">
+                    <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Paciente<b class=\"caret\"></b></a>
+                    <ul class=\"dropdown-menu\">
+                       
+                      	<li class=\"dropdown-submenu\">
+                          <a tabindex=\"-1\" href=\"#\">Cadastro</a>
+                          <ul class=\"dropdown-menu\">
+                            <li><a tabindex=\"-1\" href=\"#\">Cadastro Geral</a></li>
+                            <li class=\"dropdown-submenu\">
+                              <a href=\"#\">Cad Específico</a>
+                              <ul class=\"dropdown-menu\">
+                                  <li><a href=\" ".BARRA.url_base."/menu/cadespecmed\">Medicina</a></li>
+                                  <li><a href=\"#\">Psicologia</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        
+                        
+                        <li class=\"dropdown-submenu\">
+                          <a tabindex=\"-1\" href=\"#\">Exames</a>
+                          <ul class=\"dropdown-menu\">
+                            <li><a tabindex=\"-1\" href=\" ".BARRA.url_base."/menu/exame1\">Inserir Exames</a></li> 
+                          </ul>
+                        </li>
+                        
+                        
+                        <li class=\"dropdown-submenu\">
+                          <a tabindex=\"-1\" href=\"#\">Odontologia</a>
+                          <ul class=\"dropdown-menu\">
+                            <li><a tabindex=\"-1\" href=\"#\">Anamnese</a></li>
+                            
+                            <li class=\"dropdown-submenu\">
+                              <a href=\"#\">procedimento</a>
+                              <ul class=\"dropdown-menu\">
+                                  <li><a href=\"#\">Novo Procedimento</a></li>
+                                  <li><a href=\"#\">Buscar Procedimento</a></li>
+                              </ul>
+                            </li>
+                            
+                            <li class=\"dropdown-submenu\">
+                              <a href=\"#\">Prótese</a>
+                              <ul class=\"dropdown-menu\">
+                                  <li><a href=\"#\">Imagens</a></li>
+                                  <li><a href=\"#\"></a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                       
+                      <li class=\"dropdown-submenu\">
+                          <a tabindex=\"-1\" href=\"#\">Exames</a>
+                          <ul class=\"dropdown-menu\">
+                            <li><a tabindex=\"-1\" href=\"#\">Inserir Exames</a></li> 
+                          </ul>
+                       </li>  
+                       
+                       <li class=\"dropdown\">
+                       <a tabindex=\"-1\" href=\"#\">Visualizar Paciente</a>
+                       </li>   
+                        
+                        
+                    </ul>
+                </li>
                 
-                array( 
-                          "dropdown"=> array(
-                              "Produção Intelectual" => array(
-                                                           array(
-                                                                "link" => BARRA.url_base."#",
-                                                                "nome" =>''
-                                                          )
-                                  )
-                      )
-                       ),
-                array(
-                            "dropdown" => array(
-                                       "Paciente" => array(
-                                          
-                                           array(                                                        
-                                                        "link" => BARRA.url_base."/menu/cadastropaciente",
-                                              
-                                                        "nome" =>'Cadastro Geral'       
-                                                    
-                                           ),
-                                                    array(                                                        
-                                                        "link" => BARRA.url_base."/menu/cadespecmed",
-                                                        "nome" =>'Especifico Medicina'
-                                                    ),
-                                                    array(                                                        
-                                                        "link" => BARRA.url_base."/menu/cadespecpsi",
-                                                        "nome" =>'Especifico Psicologia'
-                                                
-                                                    ),
-                                                        
+                
+                  <li class=\"\"><a href=\"#\">Produção Intelectual</a></li>
+                
+                
+                  <li class=\"dropdown\" id=\"accountmenu\">
+                    <a class=\"dropdown-toggle\"data-toggle=\"dropdown\" href=\"#\">Relatório<b class=\"caret\"></b></a>
+                    <ul class=\"dropdown-menu\">
+                     <li class=\"dropdown\">
+                          <a tabindex=\"-1\" href=\"#\">Enviar Relatório</a>
+                     </li>
 
-                                                    array(                                                        
-                                                        "link" => BARRA.url_base."/menu/exame1",
-                                                        "nome" =>'Exames'
-                                                    ),
-                                                    
-                                                       array(                                                        
-                                                        "link" => BARRA.url_base."/menu/anamnese",
-                                                        "nome" =>'Odontologia'
-                                                    ),
-                                                    array(                                                        
-                                                        "link" => BARRA.url_base."/menu/#",
-                                                        "nome" =>'Procedimentos'
-                                                ),
-                                                    array(                                                        
-                                                        "link" => BARRA.url_base."/menu/#",
-                                                        "nome" =>'Visuaizar Paciente'
-                                                )
-                             )  
-                          )
-                        ),
-                      array( 
-                          "dropdown"=> array(
-                              "Relatório" => array(
-                                  array(
-                            "link" => BARRA.url_base."/menu/relatorio",
-                            "nome" =>'Enviar Relatório'
-                            )
-                                  )
-                      )
-                       ),
-                  array(
-                      "link" => BARRA.url_base."/login/logoff",
-                      "nome" =>'Sair'
-                  )
-           );
+                    </ul>
+                  
+                   
+                    
+                       <li class=\"\"><a href=\"\">Sair</a></li> ";
       }  
      else {
         
-         $menu = array(
-                    array( 
-                            "link" => BARRA.url_base."/menu/novoUsuario",
-                            "nome" =>'Cadastra-se'
-                        ),
-                     array(
-                           "link" => BARRA.url_base."/menu/login",
-                           "nome" =>'Login'
-                        )
-              
-        );  
-      }  
+        $menu = "<li class=\"\"><a href=\"menu/cadastropaciente\">Cadastrar-se</a></li>
+
+                 <li class=\"\"><a href=\"/menu/login\">Login</a></li>";
+                    
+        }  
+        
      //$menu[1]['nome']
       
       $this->res[] = array("menus" => $menu); 
@@ -293,7 +297,17 @@ class menu extends controller {
     }
     // Fim de relatórios
 
- 
+ public function teste(){
+        
+        //titulo da pagina
+        $this->atr_page['titulo'] = 'teste';    
+        //classe do controle 
+        $this->atr_page['control'] = 'menu/';
+        
+        $this->res[] = $this->atr_page;
+        
+       $this->view('teste', $this->res);  
+    }
     
      }
 
